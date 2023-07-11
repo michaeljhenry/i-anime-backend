@@ -54,8 +54,9 @@ mongoose
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
+    console.log("conncected")
     app.listen(process.env.PORT || 5000);
   })
   .catch((err) => {
-    //console.log(err);
+    console.log(err);
   });
