@@ -16,7 +16,7 @@ router.post(
   usersControllers.signup
 );
 
-router.delete("/fileDelete", fileDelete, fileUpload.single("image"));
+router.delete("/fileDelete", fileDelete, fileUpload.single("image"))
 
 router.post(
   "/newUpload",
